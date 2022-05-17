@@ -14,7 +14,7 @@
             <a class="nav-link" href="index.php">Inicio </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Adivina Estilo de Aprendizaje </a>
+            <a class="nav-link" href="listaAtractivos.php">lista atractivos </a>
         </li>
 
         <li class="nav-item">

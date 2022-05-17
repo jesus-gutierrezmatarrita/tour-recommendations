@@ -1,3 +1,4 @@
+<?php include("template/cabecera.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,3 +13,4 @@
     ?>
 </body>
 </html>
+<?php include("template/pie.php");?>

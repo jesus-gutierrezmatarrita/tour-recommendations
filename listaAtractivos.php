@@ -128,13 +128,13 @@
       </div>
       <div class="row masonry-item" style="position: relative; height: 690px;">
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 0%; top: 0px;">
-          <div class="package-list-wrap "><img src="images/pack-1.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src="images/volcan.jpg" class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">Atractivo de playa</p>
+              <p class="package-list-duration">Atractivo de Montaña</p>
               <h3 class="package-list-title">
-                <a href="#">Puerto Viejo, Limon</a>
+                <a href="atractivo.php">Volcàn Arenal,San Carlos</a>
               </h3>
-              <a class="package-list-button" href="#">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
             <div class="package-list-content">
               <p class="package-list-duration">Atractivo de playa</p>
               <h3 class="package-list-title">
-                <a href="#">Bahia Bayena, Guanacaste</a>
+                <a href="atractivo.php">Bahia Bayena, Guanacaste</a>
               </h3>
               <a class="package-list-button" href="#">Conocer mas</a>
             </div>
@@ -156,7 +156,7 @@
             <div class="package-list-content">
               <p class="package-list-duration">3Days, 4 NIghts Start From $250</p>
               <h3 class="package-list-title">
-                <a href="#">Best tours in Mexico</a>
+                <a href="atractivo.php">Best tours in Mexico</a>
               </h3>
               <a class="package-list-button" href="#">Book Now</a>
             </div>
@@ -168,7 +168,7 @@
             <div class="package-list-content">
               <p class="package-list-duration">3Days, 4 NIghts Start From $370</p>
               <h3 class="package-list-title">
-                <a href="#">Holiday in Azerbaijan</a>
+                <a href="atractivo.php">Holiday in Azerbaijan</a>
               </h3>
               <a class="package-list-button" href="#">Book Now</a>
             </div>
@@ -180,7 +180,7 @@
             <div class="package-list-content">
               <p class="package-list-duration">3Days, 4 NIghts Start From $450</p>
               <h3 class="package-list-title">
-                <a href="#">Hamburger ham pork</a>
+                <a href="atractivo.php">Hamburger ham pork</a>
               </h3>
               <a class="package-list-button" href="#">Book Now</a>
             </div>
@@ -192,7 +192,7 @@
             <div class="package-list-content">
               <p class="package-list-duration">3Days, 4 NIghts Start From $550</p>
               <h3 class="package-list-title">
-                <a href="#">Eternal City of Rome</a>
+                <a href="atractivo.php">Eternal City of Rome</a>
               </h3>
               <a class="package-list-button" href="#">Book Now</a>
             </div>

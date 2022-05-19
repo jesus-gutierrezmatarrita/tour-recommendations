@@ -1,13 +1,30 @@
 <?php include("template/cabecera.php"); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=s, initial-scale=1.0">
-  <title>Tour Recommendations</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/fv-icon.png" type="image/gif">
+  <title>Tour recomendation</title>
+  <!--bootstrap.min.css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--animate.css-->
+  <link rel="stylesheet" href="css/animate.min.css">
+  <!--fontawesome 5-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--lity.css-->
+  <link rel="stylesheet" href="css/lity.min.css">
+  <!--slicknav.css-->
+  <link rel="stylesheet" href="css/slicknav.min.css">
+  <!--slickslider.css-->
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <!-- Custom.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
@@ -22,7 +39,6 @@
               <br> </br>
               <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
             </div>
-          </div>
         </li>
         <li class="nav-item">
           <div class="input-group-prepend">
@@ -91,15 +107,6 @@
         </li>
         <li class="nav-item">
           <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Playa</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
             <button style="margin: 11px; " type="button" class="btn btn-success">Filtrar</button>
           </div>
         </li>
@@ -108,47 +115,123 @@
     </nav>
   </div>
 
-
-  <div class="card-group">
-    <div class="card">
+  <!-- Start-Package-Section -->
+  <section class="ws-section-spacing bg-gray">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <img class="rounded float-left" src="https://cdn.adobecar.com/wp-content/uploads/2019/02/15153142/monteverde-2.jpg" class="card-img-top">
+          <div class="center-title ">
+            <h2 class="title">Atractivos turistico</h2>
+            <h4 class="sub-title">Se le mostrara una lista de atractivos turisticos de los cuales podra cambiar seleccionando los filtros de su interes.</h4>
+          </div>
         </div>
       </div>
-      <div class="card-body">
-        <h5 class="card-title">Monteverde: Reserva Biológica Bosque Nuboso</h5>
-        <p class="card-text">La reserva del bosque nuboso Monteverde está ubicada a 5 kilómetros al este del centro de Santa Elena. Esta Reserva Biológica pertenece al Centro Científico Tropical, fundado en 1962, organización no gubernamental costarricense. Localizada en la Zona Protectora Arenal – Monteverde, que pertenece al Área de Conservación Arenal-Tilarán.
+      <div class="row masonry-item" style="position: relative; height: 690px;">
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 0%; top: 0px;">
+          <div class="package-list-wrap "><img src="images/pack-1.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">Atractivo de playa</p>
+              <h3 class="package-list-title">
+                <a href="#">Puerto Viejo, Limon</a>
+              </h3>
+              <a class="package-list-button" href="#">Conocer mas</a>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 33.3333%; top: 0px;">
+          <div class="package-list-wrap "><img src="images/pack-2.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">Atractivo de playa</p>
+              <h3 class="package-list-title">
+                <a href="#">Bahia Bayena, Guanacaste</a>
+              </h3>
+              <a class="package-list-button" href="#">Conocer mas</a>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 66.6667%; top: 0px;">
+          <div class="package-list-wrap "><img src="images/pack-3.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">3Days, 4 NIghts Start From $250</p>
+              <h3 class="package-list-title">
+                <a href="#">Best tours in Mexico</a>
+              </h3>
+              <a class="package-list-button" href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 0%; top: 345px;">
+          <div class="package-list-wrap "><img src="images/pack-4.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">3Days, 4 NIghts Start From $370</p>
+              <h3 class="package-list-title">
+                <a href="#">Holiday in Azerbaijan</a>
+              </h3>
+              <a class="package-list-button" href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 33.3333%; top: 345px;">
+          <div class="package-list-wrap "><img src="images/pack-5.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">3Days, 4 NIghts Start From $450</p>
+              <h3 class="package-list-title">
+                <a href="#">Hamburger ham pork</a>
+              </h3>
+              <a class="package-list-button" href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- item -->
+        <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 66.6667%; top: 345px;">
+          <div class="package-list-wrap "><img src="images/pack-6.jpg" class="img-fluid" alt="">
+            <div class="package-list-content">
+              <p class="package-list-duration">3Days, 4 NIghts Start From $550</p>
+              <h3 class="package-list-title">
+                <a href="#">Eternal City of Rome</a>
+              </h3>
+              <a class="package-list-button" href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- item-end -->
+      </div>
+    </div>
+  </section>
+  <!-- End-Package-Section -->
 
-          Los objetivos del Área de Conservación son preservar la valiosa biodiversidad de esta región, proteger los numerosos manantiales y crear condiciones óptimas para la naturaleza, protegiendo las reservas naturales de Costa Rica.
+  <!-- Jquery.min.js-->
+  <script src="js/jquery.1.12.4.js"></script>
+  <!--bootstrap.min.js-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <!--slicknav.min.js-->
+  <script src="js/jquery.slicknav.min.js"></script>
+  <!--slickslider.min.js-->
+  <script src="js/slick.min.js"></script>
+  <!-- counterup.min.js -->
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <!-- magnific-popup.js -->
+  <script src="js/lity.min.js"></script>
+  <!-- isotope.pkgd.min.js -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/imagesloaded.js"></script>
+  <!-- main.js -->
+  <script src="js/main.js"></script>
 
-          La reserva está muy bien desarrollada y proporciona una muy buena visión de la vegetación de la selva tropical. El acceso a la reserva de Monteverde está limitada a un máximo de 200 personas al mismo tiempo. Monteverde es famosa por sus atracciones de aventura, desde avistamiento de aves, paseos a caballo, hasta volar en canopy sobre el bosque nuboso hasta una distancia de 1 km.</p>
-      </div>
-      <div class="card-footer">
-        <button style="margin: 11px; " type="button" class="btn btn-success">Visitar</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
+
+
+  <style type="text/css">
+    .typewrite>.wrap {
+      border-right: 0.08em solid #fff
+    }
+  </style>
 </body>
 
 </html>

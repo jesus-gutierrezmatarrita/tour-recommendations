@@ -18,11 +18,11 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#">Adivina Recinto Origen</a>
+            <a class="nav-link" href="filtroTipoBusqueda.php">Filtro de tipo atractivo/recomendacion</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="#">Adivinar el sexo</a>
+            <a class="nav-link" href="contact.php">Contactenos</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Adivinar EA</a>

@@ -6,7 +6,7 @@
 <head>
     <title>Materilize | Carrousel y Media</title>
     <link rel="stylesheet" href="css/animate.css" />
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+   
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
@@ -28,21 +28,21 @@
                     <h2 class="subtitulo">Volcán</h2>
                     <div class="linea-division"></div>
                     <p class="sabor">Arenal</p>
-                    <img src="img/laguna.jpg" width="100%" alt="">
+                    <img src="images/laguna.jpg" width="100%" alt="">
                 </div>
 
                 <div class="carousel-item">
                     <h2 class="subtitulo">Volcán</h2>
                     <div class="linea-division"></div>
                     <p class="sabor">Arenal</p>
-                    <img src="img/laguna1.jpg" alt="">
+                    <img src="images/laguna1.jpg" alt="">
                 </div>
 
                 <div class="carousel-item">
                     <h2 class="subtitulo">Volcán</h2>
                     <div class="linea-division"></div>
                     <p class="sabor">Arenal</p>
-                    <img src="img/volcan.jpg" alt="">
+                    <img src="images/volcan.jpg" alt="">
                 </div>
 
 

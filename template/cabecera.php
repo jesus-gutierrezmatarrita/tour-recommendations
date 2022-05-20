@@ -49,7 +49,7 @@
                 <a class="nav-link" href="login.php">Iniciar sesión</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="registrar.php">Crear cuenta</a>
+                <a class="nav-link" href="registro.php">Crear cuenta</a>
             </li>
         </ul>
     </nav>

@@ -23,7 +23,7 @@
     <header class="header" id="inicio">
         <div class="contenedor head">
             <h1 class="titulo">Las mejores actividades a su alcance</h1>
-            <p class="copy">Diviertase con nuestra actividad de.</p>
+            <p class="copy">Diviertase con nuestra actividad de...</p>
         </div>
     </header>
     <main>
@@ -51,24 +51,25 @@
                     </div>
                     <div class="service">
                         <h3 class="n-service">
-                            <spam class="number">1</spam>Recomendaciones
+                            <spam class="number">1</spam>Incluye
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem cumque quam maiores
-                            ipsam, repellendus ipsa omnis perferendis accusantium nesciunt!</p>
+                        <p>Se incluye transporte ida y vuelta
+                            Merienda y almuerzo en el lugar
+                            El equipo para realizar snorkeling
+                        </p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
                             <spam class="number">2</spam>Horario
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem cumque quam maiores
-                            ipsam, repellendus ipsa omnis perferendis accusantium nesciunt!</p>
+                        <p>Lunes-Juves: 11:00am 4pm</p>
+                        <p>Viernes-Domingo: 11:00am 4pm</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
-                            <spam class="number">3</spam>Incluye
+                            <spam class="number">3</spam>Precio
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatem cumque quam maiores
-                            ipsam, repellendus ipsa omnis perferendis accusantium nesciunt!</p>
+                        <p>$50 por persona</p>
                     </div>
                 </div>
             </div>
@@ -94,15 +95,19 @@
             <h2 class="subtitulo">Nuestro Transporte incluye:</h2>
             <section class="class experts">
                 <div class="cont-expert">
-                    <img src="img/aire.png" alt="">
-                    <h3 class="n-expert"></h3>
+                    <img src="images/aircon.jpg" alt="">
+                    <h3 class="n-expert">Aire Acondicionado</h3>
                 </div>
                 <div class="cont-expert">
-                <img src="img/wifi.svg" title="Wifi" alt="Wifi">
-                    <h3 class="n-expert"></h3>
+                <img src="images/wifi.jpg" title="Wifi" alt="Wifi">
+                    <h3 class="n-expert">Wi-Fi</h3>
                 </div>
                 <div class="cont-expert">
-                    <img src="img/Bus.svg" alt="">
+                    <img src="images/Bus.svg" alt="">
+                    <p></p>
+                    <h1></h1>
+                    <br>
+                    <br>
                     <h3 class="n-expert">Servicio privado</h3>
                 </div>
             </section>

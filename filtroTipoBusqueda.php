@@ -34,8 +34,8 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="center-title ">
-            <h2 class="title">Tipo de busqueda</h2>
-            <h4 class="sub-title">Por favor escoja una de las opciones para mostrar los lugares de su interes.</h4>
+            <h2 class="title">Tipo de búsqueda</h2>
+            <h4 class="sub-title">Por favor, escoja una de las opciones para mostrar los lugares de su interés.</h4>
           </div>
         </div>
       </div>

@@ -134,7 +134,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php">Volcàn Arenal,San Carlos</a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="actividades.php">Conocer mas</a>
             </div>
           </div>
         </div>

@@ -72,7 +72,7 @@
                       <div class="place-box">
                         <div class="wapper-img">
                           <img src="images/des-6.jpg" alt="">
-                          <a href="#" class="pop-btn" tabindex="-1">Seleccionar</a>
+                          <a href="listaRecomendaciones.php" class="pop-btn" tabindex="-1">Seleccionar</a>
                         </div>
                         <div class="desi-inner">
                           <h4>Recomendaciones </h4>

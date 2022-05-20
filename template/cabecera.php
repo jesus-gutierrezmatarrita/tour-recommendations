@@ -35,7 +35,11 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="filtroTipoBusqueda.php">Filtro de tipo atractivo/recomendacion</a>
+                <a class="nav-link" href="listaRecomendaciones.php">Lista de recomendaciones </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="filtroTipoBusqueda.php">Oferta de atractivos</a>
             </li>
 
             <li class="nav-item">

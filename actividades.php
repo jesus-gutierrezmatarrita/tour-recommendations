@@ -88,8 +88,8 @@
             </div>
         </section>
         <section class="imagen-ligth">
-            <img src="img/close.svg" alt="" class="close">
-            <img src="" alt="" class="agregar-imagen">
+            <img src="images/close.svg" alt="" class="close">
+            <img src="images/im1.jpg" alt="" class="agregar-imagen">
         </section>
         <section class="contenedor" id="expertos">
             <h2 class="subtitulo">Nuestro Transporte incluye:</h2>

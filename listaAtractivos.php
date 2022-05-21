@@ -63,7 +63,7 @@
             <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
           </div>
           <div style="margin-top: 1%;">
-            <button type="submit" class="btn-tour"> Search</button>
+            <button type="submit" class="btn-tour">Filtrar</button>
           </div>
         </form>
       </div>

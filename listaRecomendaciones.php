@@ -28,92 +28,47 @@
 </head>
 
 <body>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Animales</label>
-              <i class="bi bi-boombox"></i>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Comidas</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
+<section class="ws-section-spacing bg-gray">
+    <div class="search_area">
+      <div class="container">
+        <!--Search Form-->
+        <form class=" row search_area-inner">
+          <div class="col-lg-3">
+            <label>Tipo Atractivo</label>
+            <select class="selectpicker search-fields form-control">
+              <option value="0"> Familiar</option>
+              <option value="1"> Pareja</option>
+              <option value="2"> Pet friendly</option>
+            </select>
           </div>
-        </li>
-
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Niños</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
+          <div class="col-lg-3">
+            <label>Accesibilidad</label>
+            <select class="selectpicker search-fields form-control">
+              <option value="0"> Todo tipo de vehiculo</option>
+              <option value="1"> 4x4</option>
+              <option value="2"> Caminata</option>
+            </select>
           </div>
-        </li>
-
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Parqueo</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
+          <div class="col-lg-3">
+            <label>Servicio de preferencia</label>
+            <select class="selectpicker search-fields form-control">
+              <option value="0"> Restaurante</option>
+              <option value="1"> Hospedaje</option>
+              <option value="2"> Parqueo</option>
+            </select>
           </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Pago con tarjeta</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
+          <div class="col-lg-3">
+            <label>Fecha</label>
+            <input type="text" class="form-control " id="datepicker" name="DateFron" data-date-format="yyyy-mm-dd" placeholder="Check In" value="">
+            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
           </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Familiar</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
+          <div style="margin-top: 1%;">
+            <button type="submit" class="btn-tour">Filtrar</button>
           </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Facil acceso</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <label for="formGroupExampleInput">Montaña</label>
-              <br> </br>
-              <input style="margin: 11px;" type="checkbox" aria-label="Checkbox for following text input">
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="input-group-prepend">
-            <button style="margin: 11px; " type="button" class="btn btn-success">Filtrar</button>
-          </div>
-        </li>
-
-      </ul>
-    </nav>
-  </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <!-- Start-Package-Section -->
   <section class="ws-section-spacing bg-gray">

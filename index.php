@@ -181,6 +181,14 @@
             text-decoration: none;
         }
     </style>
+
+    <style>
+        .carouselImg img {
+            width: auto;
+            height: 500px;
+            max-height: 500px;
+        }
+    </style>
     <!--bootstrap.min.css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--animate.css-->
@@ -200,7 +208,7 @@
 </head>
 
 <body>
-    <section class="ws-section-spacing bg-gray shadow-lg p-3 mb-5 bg-body rounded" style="overflow:hidden; margin-top: 10%;">
+    <section class="ws-section-spacing bg-gray rounded">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6  d-flex align-items-center">
@@ -213,30 +221,30 @@
 
                 <div id="homeCarousel" class="carousel slide col-lg-6" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="4000">
+                        <div class="carousel-item active carouselImg" data-bs-interval="4000">
                             <img src="images/pack-1.jpg" height="200px" alt="landscape1">
                         </div>
-                        <div class="carousel-item" data-bs-interval="4000">
+                        <div class="carousel-item carouselImg" data-bs-interval="4000">
                             <img src="images/volcan.jpg" height="200px" alt="landscape2">
                         </div>
-                        <div class="carousel-item" data-bs-interval="4000">
+                        <div class="carousel-item carouselImg" data-bs-interval="4000">
                             <img src="images/pack-3.jpg" height="200px" alt="landscape3">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span class="visually-hidden">Anterior</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span class="visually-hidden">Siguiente</span>
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer  class="ws-section-spacing img-footer">
+    <footer class="ws-section-spacing img-footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-7 col-sm-12">
@@ -244,7 +252,7 @@
                         <div class="title">
                             <h3>Acerca de</h3>
                         </div>
-                        <p>Una nplataforma para explorar y descubrir de un sin fin de lugares que no sabías que existían.</p>
+                        <p>Una plataforma para explorar y descubrir de un sin fin de lugares que no sabías que existían.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-7 col-sm-12">
@@ -267,7 +275,7 @@
                                     <img src="images/f1.jpg" alt="" class="img-rounded">
                                 </div>
                                 <div class="post-content">
-                                    <h5><a >Filtra según tus nececidades.</a>
+                                    <h5><a>Filtra según tus nececidades.</a>
                                     </h5>
                                     <span>12 Mayo, 2022</span>
                                 </div>
@@ -278,7 +286,7 @@
                                     <img src="images/f2.jpg" alt="" class="img-rounded">
                                 </div>
                                 <div class="post-content">
-                                    <h5><a >La función de crear un perfil de usuario.</a></h5>
+                                    <h5><a>La función de crear un perfil de usuario.</a></h5>
                                     <span>20 Mayo, 2022</span>
                                 </div>
                             </li>
@@ -288,7 +296,7 @@
                 <div class="col-lg-4 col-md-7 col-sm-12">
                     <div class="footer-widget">
                         <div class="title">
-                            <h3>Gallery</h3>
+                            <h3>Galería</h3>
                         </div>
                         <ul class="ftr-gallery-list">
                             <li><a href="images/pack-7.jpg" data-lity=""><img src="images/pack-7.jpg" alt=""></a>

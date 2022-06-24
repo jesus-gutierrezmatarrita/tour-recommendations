@@ -1,4 +1,6 @@
 <?php include("template/cabecera.php"); ?>
+<?php include("conexion.php"); ?>
+<?PhP include("algoritmoBayesAtractivo.php");?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -32,38 +34,55 @@
     <div class="search_area">
       <div class="container">
         <!--Search Form-->
-        <form class=" row search_area-inner">
+        <form class=" row search_area-inner" method="POST">
           <div class="col-lg-3">
-            <label>Tipo Atractivo</label>
-            <select class="selectpicker search-fields form-control">
-              <option value="0"> Familiar</option>
-              <option value="1"> Pareja</option>
-              <option value="2"> Pet friendly</option>
+            <label>Tipo de turista</label>
+            <select class="selectpicker search-fields form-control" name="tipoTurista">
+              
+              <option value="1"> Nacional</option>
+              <option value="2"> Extranjero</option>
             </select>
           </div>
           <div class="col-lg-3">
-            <label>Accesibilidad</label>
-            <select class="selectpicker search-fields form-control">
-              <option value="0"> Todo tipo de vehiculo</option>
-              <option value="1"> 4x4</option>
-              <option value="2"> Caminata</option>
+            <label>Tipo de clima</label>
+            <select class="selectpicker search-fields form-control" name="tipoClima">
+            
+              <option value="1"> Frío</option>
+              <option value="2"> Caliente</option>
             </select>
           </div>
           <div class="col-lg-3">
-            <label>Servicio de preferencia</label>
-            <select class="selectpicker search-fields form-control">
-              <option value="0"> Restaurante</option>
-              <option value="1"> Hospedaje</option>
-              <option value="2"> Parqueo</option>
+            <label>Disponibildad de internet</label>
+            <select class="selectpicker search-fields form-control" name="señalInternet">
+        
+              <option value="1"> si</option>
+              <option value="2"> No</option>
             </select>
           </div>
           <div class="col-lg-3">
-            <label>Fecha</label>
-            <input type="text" class="form-control " id="datepicker" name="DateFron" data-date-format="yyyy-mm-dd" placeholder="Check In" value="">
-            <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+            <label>Precio</label>
+            <select class="selectpicker search-fields form-control" name="precio">
+        
+              <option value="1"> Entre 5000 a 15000</option>
+              <option value="2"> Entre 15000 a 30000 </option>
+              <option value="3"> Mayor a 30000 </option>
+            </select>
+          </div>
+          <div class="col-lg-3">
+            <label>Lugar</label>
+            <select class="selectpicker search-fields form-control" name="lugar">
+        
+              <option value="1"> San José</option>
+              <option value="2"> Alajuela </option>
+              <option value="3"> Cartago </option>
+              <option value="4"> Heredia </option>
+              <option value="5"> Guanacaste </option>
+              <option value="3"> Puntarenas </option>
+              <option value="3"> Limón </option>
+            </select>
           </div>
           <div style="margin-top: 1%;">
-            <button type="submit" class="btn-tour">Filtrar</button>
+            <button name="atractivo" type="submit" class="btn-tour">Filtrar</button>
           </div>
         </form>
       </div>

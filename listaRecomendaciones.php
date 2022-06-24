@@ -35,7 +35,7 @@
         <form class=" row search_area-inner">
           <div class="col-lg-3">
             <label>Tipo Atractivo</label>
-            <select class="selectpicker search-fields form-control">
+            <select class="selectpicker search-fields form-control" name="tipoAtractivo">
               <option value="0"> Familiar</option>
               <option value="1"> Pareja</option>
               <option value="2"> Pet friendly</option>

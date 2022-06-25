@@ -87,6 +87,14 @@
         </form>
       </div>
     </div>
+
+    <?PhP
+
+    $datos=array_rand($arrayDatos,6);
+    $phpVariable = "Dog";
+    ?>
+    
+
   </section>
   <!-- Start-Package-Section -->
   <section class="ws-section-spacing bg-gray">
@@ -101,11 +109,14 @@
       </div>
       <div class="row masonry-item" style="position: relative; height: 690px;">
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 0%; top: 0px;">
-          <div class="package-list-wrap "><img src="images/volcan.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[0]][3] ?> class="img-fluid" style="
+                  
+                    height: 367px;
+                    margin-top: 1%;
+                "alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">Atractivo de Montaña</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Volcàn Arenal,San Carlos</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[0]][1] ?></a>
               </h3>
               <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
@@ -113,61 +124,76 @@
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 33.3333%; top: 0px;">
-          <div class="package-list-wrap "><img src="images/pack-2.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[1]][3] ?>  style="
+                  
+                  height: 367px;
+                  margin-top: 1%;
+              " class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">Atractivo de playa</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Bahia Bayena, Guanacaste</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[1]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="#">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
           </div>
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 66.6667%; top: 0px;">
-          <div class="package-list-wrap "><img src="images/pack-3.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[2]][3] ?> style="
+                  
+                  height: 367px;
+                  margin-top: 1%;
+              " class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">3Days, 4 NIghts Start From $250</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Best tours in Mexico</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[2]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="#">Book Now</a>
+              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
           </div>
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 0%; top: 345px;">
-          <div class="package-list-wrap "><img src="images/pack-4.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[3]][3] ?> style="
+                  
+                  height: 367px;
+                  margin-top: 1%;
+              " class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">3Days, 4 NIghts Start From $370</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Holiday in Azerbaijan</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[3]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="#">Book Now</a>
+              <a class="package-list-button"  href="atractivo.php">conocer mas</a>
             </div>
           </div>
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 33.3333%; top: 345px;">
-          <div class="package-list-wrap "><img src="images/pack-5.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[4]][3] ?> style="
+                  
+                  height: 367px;
+                  margin-top: 1%;
+              " class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">3Days, 4 NIghts Start From $450</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Hamburger ham pork</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[4]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="#">Book Now</a>
+              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
           </div>
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 66.6667%; top: 345px;">
-          <div class="package-list-wrap "><img src="images/pack-6.jpg" class="img-fluid" alt="">
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[5]][3] ?> style="
+                  
+                  height: 367px;
+                  margin-top: 1%;
+              " class="img-fluid" alt="">
             <div class="package-list-content">
-              <p class="package-list-duration">3Days, 4 NIghts Start From $550</p>
               <h3 class="package-list-title">
-                <a href="atractivo.php">Eternal City of Rome</a>
+                <a href="atractivo.php"><?= $arrayDatos[$datos[5]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="#">Book Now</a>
+              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -175,6 +201,8 @@
       </div>
     </div>
   </section>
+  
+
   <!-- End-Package-Section -->
 
   <!-- Jquery.min.js-->

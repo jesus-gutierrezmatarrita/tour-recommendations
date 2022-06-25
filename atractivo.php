@@ -54,10 +54,8 @@
             </div>
         </div>
 
+
     </div>
-
-
-
     <section id="about">
         <div class="container">
             <div class="video">
@@ -65,7 +63,7 @@
             </div>
             <div class="containerabout wow animated zoomIn">
                 <div class="i-do  ">
-                    <h3>Dirección</h3>
+                    <h3>Descripcion</h3>
                     <p>Desde San José, tome la carretera Interamericana hacia el oeste con destino a San Ramón.
                         Luego siga la carretera al norte a través de Los Ángeles, La Tigra y Chachagua hasta La
                         Fortuna de ahí tomar la ruta 142, 17 km hacia Tilarán una vez que llega al puesto de la

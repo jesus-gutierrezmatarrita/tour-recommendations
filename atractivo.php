@@ -1,4 +1,29 @@
 <?php include("template/cabecera.php"); ?>
+<?php include("conexion.php"); ?>
+<?php
+
+$id= $_GET["saludo"];
+//echo $id;
+?>
+<?php
+require_once("conexion.php");
+
+$conexion = base::conexionn();
+$consulta = mysqli_query($conexion, "SELECT * FROM atractivo_Turistico WHERE id = '$id'");
+      while($row = mysqli_fetch_array($consulta)){
+       
+        $imagen = $row['imagen'];
+        $descripcion=$row['descripcion'];
+        $nombre =$row['nombre'];
+        $lugarDescripcion=$row['descripcion_lugar'];
+        $horario=$row['horario'];
+        $tarifa=$row['tarifa'];
+        $contacto=$row['contacto'];
+        $urlYoutube=$row['url_youtube'];
+
+      }
+    
+      ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,24 +52,24 @@
             <div class="carousel center-align">
                 <div class="carousel-item">
 
-                    <h2 class="subtitulo">Volcán</h2>
+                    <h2 class="subtitulo"></h2>
                     <div class="linea-division"></div>
-                    <p class="sabor">Arenal</p>
-                    <img src="images/laguna.jpg" width="100%" alt="">
+                    <p class="sabor"><?= $nombre?></p>
+                    <img src=<?= $imagen?> width="100%" alt="">
                 </div>
 
                 <div class="carousel-item">
-                    <h2 class="subtitulo">Volcán</h2>
+                    <h2 class="subtitulo"></h2>
                     <div class="linea-division"></div>
-                    <p class="sabor">Arenal</p>
-                    <img src="images/laguna1.jpg" alt="">
+                    <p class="sabor"><?= $nombre?></p>
+                    <img src=<?= $imagen?> alt="">
                 </div>
 
                 <div class="carousel-item">
-                    <h2 class="subtitulo">Volcán</h2>
+                    <h2 class="subtitulo"></h2>
                     <div class="linea-division"></div>
-                    <p class="sabor">Arenal</p>
-                    <img src="images/volcan.jpg" alt="">
+                    <p class="sabor"><?= $nombre?></p>
+                    <img src=<?= $imagen?> alt="">
                 </div>
 
 
@@ -64,23 +89,12 @@
             <div class="containerabout wow animated zoomIn">
                 <div class="i-do  ">
                     <h3>Descripcion</h3>
-                    <p>Desde San José, tome la carretera Interamericana hacia el oeste con destino a San Ramón.
-                        Luego siga la carretera al norte a través de Los Ángeles, La Tigra y Chachagua hasta La
-                        Fortuna de ahí tomar la ruta 142, 17 km hacia Tilarán una vez que llega al puesto de la
-                        Policía Turística se desvía 2 km hacia el sur. </p>
+                    <p><?= $descripcion?></p>
                 </div>
                 <div class="containerabout wow animated zoomIn ">
                     <div class="love-do  ">
                         <h3>Descripción del lugar</h3>
-                        <p>El Parque Nacional Volcán Arenal se localiza en la región noroeste
-                            de Costa Rica, entre el pie de monte de la Cordillera de Tilarán y
-                            las Llanuras de San Carlos, a 15 km de Fortuna. Es uno de los destinos más
-                            visitados de la Zona Norte, cuenta con varios senderos: Heliconias, Coladas,
-                            Tucanes y los Miradores, los cuales permiten la observación de gran parte de la
-                            flora y fauna del parque así como de restos de las coladas de lava.
-                            El parque cuenta con 12.124 ha. En cuanto a los servicios al visitante se tiene:
-                            información, casa de guarda parques, senderos, comunicación, servicios sanitarios y
-                            agua potable.</p>
+                        <p><?= $lugarDescripcion?></p>
                     </div>
                 </div>
             </div>
@@ -104,7 +118,7 @@
                             <i class="fa fa-calendar fa-3x"></i>
                         </div>
                         <h3>Horario</h3>
-                        <p>Todos los días de 8 am a 4 pm </p>
+                        <p><?= $horario?> </p>
                     </div>
                 </div>
 
@@ -114,10 +128,7 @@
                             <i class="fa fa-money fa-3x"></i>
                         </div>
                         <h3>Tarifas</h3>
-                        <p>Adulto nacional, y residente: ¢1.000.
-                            Niño nacional, y residente: ¢500.
-                            Adulto no residente: $15.
-                            Niño no residente: $5. </p>
+                        <p><?= $tarifa?> </p>
                     </div>
                 </div>
 
@@ -127,9 +138,7 @@
                             <i class="fa fa-phone fa-3x"></i>
                         </div>
                         <h3>Contacto</h3>
-                        <p>info@catuzon.com
-                            www.catuzon.com
-                            Tel.: (506) 2479-7512 </p>
+                        <p><?= $contacto?> </p>
                     </div>
                 </div>
 

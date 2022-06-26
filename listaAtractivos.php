@@ -34,7 +34,7 @@
     <div class="search_area">
       <div class="container">
         <!--Search Form-->
-        <form class=" row search_area-inner" method="POST">
+        <form  class=" row search_area-inner" method="POST">
           <div class="col-lg-3">
             <label>Tipo de turista</label>
             <select class="selectpicker search-fields form-control" name="tipoTurista">
@@ -92,6 +92,7 @@
 
     $datos=array_rand($arrayDatos,6);
     $phpVariable = "Dog";
+    
     ?>
     
 
@@ -118,7 +119,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[0]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[0]][0];?>">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -133,7 +134,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[1]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[1]][0];?>">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -148,7 +149,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[2]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[2]][0];?>">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -163,7 +164,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[3]][1] ?></a>
               </h3>
-              <a class="package-list-button"  href="atractivo.php">conocer mas</a>
+              <a class="package-list-button"  href="atractivo.php?saludo=<?=$arrayDatos[$datos[3]][0];?>">conocer mas</a>
             </div>
           </div>
         </div>
@@ -178,7 +179,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[4]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[4]][0];?>">Conocer mas</a>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[5]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[5]][0];?>">Conocer mas</a>
             </div>
           </div>
         </div>

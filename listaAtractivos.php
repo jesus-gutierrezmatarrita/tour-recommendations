@@ -119,7 +119,16 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[0]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[0]][0];?>">Conocer mas</a>
+              <br>
+              <?php
+
+                $id= $arrayDatos[$datos[0]][0];
+               echo $id;
+              ?>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[0]][0];?>"></a>
+              <button type="button" name="mod" class="btn btn-primary" <?php $id= $arrayDatos[$datos[0]][0];  ?>data-toggle="modal" data-target="#dialogo1">
+             
+             
             </div>
           </div>
         </div>
@@ -134,7 +143,9 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[1]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[1]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[1]][0];?>"></a>
+              <button type="button" class="btn btn-primary" <?php $id= $arrayDatos[$datos[1]][0];  ?> data-toggle="modal" data-target="#dialogo1">
+              
             </div>
           </div>
         </div>
@@ -202,6 +213,67 @@
       </div>
     </div>
   </section>
+
+
+
+  <?php
+require_once("conexion.php");
+
+$conexion = base::conexionn();
+$consulta = mysqli_query($conexion, "SELECT * FROM atractivo_Turistico WHERE id = '$id'");
+      while($row = mysqli_fetch_array($consulta)){
+       
+        $imagen = $row['imagen'];
+        $descripcion=$row['descripcion'];
+        $nombre =$row['nombre'];
+        $lugarDescripcion=$row['descripcion_lugar'];
+        $horario=$row['horario'];
+        $tarifa=$row['tarifa'];
+        $contacto=$row['contacto'];
+        $urlYoutube=$row['url_youtube'];
+
+      }
+    
+      ?>
+  <!-- Modal -->
+  <div class="modal fade" id="dialogo1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+             
+            <a href="atractivo.php?saludo=<?=$id?>" class="btn btn-info" role="button">Link Button</a>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+
+<div class="row">
+  <div class="col-5">
+    <img src=<?= $imagen?>
+      class="img-fluid" alt="">
+  </div>
+
+  <div class="col-7">
+    <p><strong>My travel to paradise</strong></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit [...]</p>
+    <button type="button" class="btn btn-info btn-md">Read more</button>
+
+  </div>
+</div>
+</div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
   
 
   <!-- End-Package-Section -->
@@ -229,6 +301,14 @@
 
 
 
+  <script>
+  $('.openBtn').on('click',function(){
+    $('.modal-body').load('CargarContenido.php?saludo<?=$arrayDatos[$datos[0]][0];?>',function(){
+        $('#myModal').modal({show:true});
+    });
+});
+
+</script>
   <style type="text/css">
     .typewrite>.wrap {
       border-right: 0.08em solid #fff

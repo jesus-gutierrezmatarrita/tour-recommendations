@@ -118,13 +118,8 @@
                 <a href="atractivo.php"><?= $arrayDatos[$datos[0]][1] ?></a>
               </h3>
               <br>
-              <?php
-
-              $id = $arrayDatos[$datos[0]][0];
-              echo $id;
-              ?>
-              <a class="package-list-button" href="actividades.php?direccion=<?= $arrayDatos[$datos[0]][0]; ?>"></a>
-              <button type="button" name="mod" class="btn btn-primary" <?php $id = $arrayDatos[$datos[0]][0];  ?>data-toggle="modal" data-target="#dialogo1">
+              <a class="package-list-button" href="actividades.php?direccion=<?= $arrayDatos[$datos[0]][0]; ?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[0]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -139,8 +134,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[1]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[1]][0];?>"></a>
-              <button type="button" class="btn btn-primary" <?php $id= $arrayDatos[$datos[1]][0];  ?> data-toggle="modal" data-target="#dialogo1">
+              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[1]][0];?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[1]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -155,7 +150,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[2]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[2]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[2]][0];?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[2]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -170,7 +166,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[3]][1] ?></a>
               </h3>
-              <a class="package-list-button"  href="actividades.php?direccion=<?=$arrayDatos[$datos[3]][0];?>">conocer mas</a>
+              <a class="package-list-button"  href="actividades.php?direccion=<?=$arrayDatos[$datos[3]][0];?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[3]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -185,7 +182,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[4]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[4]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[4]][0];?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[4]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -200,7 +198,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[5]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[5]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="actividades.php?direccion=<?=$arrayDatos[$datos[5]][0];?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[5]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -208,6 +207,39 @@
       </div>
     </div>
   </section>
+
+<!-- Modal -->
+<div class="modal fade" id="dialogo1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- cabecera del diálogo -->
+        <div class="modal-header">
+          <h4 class="modal-title">Vistazo rápido</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;background-color:white;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+
+        <!-- cuerpo del diálogo -->
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-5">
+              <!--<img src=<?= $imagen ?> class="img-fluid" alt="">-->
+            </div>
+
+          </div>
+        </div>
+
+        <!-- pie del diálogo -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
   <!-- End-Package-Section -->
@@ -232,9 +264,15 @@
   <script src="js/imagesloaded.js"></script>
   <!-- main.js -->
   <script src="js/main.js"></script>
-
-
-
+  <script>
+    $('.openBtn').on('click', function() {
+      $('.modal-body').load('CargarContenido.php?saludo<?= $arrayDatos[$datos[0]][0]; ?>', function() {
+        $('#myModal').modal({
+          show: true
+        });
+      });
+    });
+  </script>
   <style type="text/css">
     .typewrite>.wrap {
       border-right: 0.08em solid #fff

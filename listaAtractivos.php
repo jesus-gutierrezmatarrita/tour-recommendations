@@ -1,6 +1,6 @@
 <?php include("template/cabecera.php"); ?>
 <?php include("conexion.php"); ?>
-<?PhP include("algoritmoBayesAtractivo.php");?>
+<?PhP include("algoritmoBayesAtractivo.php"); ?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -34,11 +34,11 @@
     <div class="search_area">
       <div class="container">
         <!--Search Form-->
-        <form  class=" row search_area-inner" method="POST">
+        <form class=" row search_area-inner" method="POST">
           <div class="col-lg-3">
             <label>Tipo de turista</label>
             <select class="selectpicker search-fields form-control" name="tipoTurista">
-              
+
               <option value="1"> Nacional</option>
               <option value="2"> Extranjero</option>
             </select>
@@ -46,7 +46,7 @@
           <div class="col-lg-3">
             <label>Tipo de clima</label>
             <select class="selectpicker search-fields form-control" name="tipoClima">
-            
+
               <option value="1"> Frío</option>
               <option value="2"> Caliente</option>
             </select>
@@ -54,7 +54,7 @@
           <div class="col-lg-3">
             <label>Disponibildad de internet</label>
             <select class="selectpicker search-fields form-control" name="señalInternet">
-        
+
               <option value="1"> si</option>
               <option value="2"> No</option>
             </select>
@@ -62,7 +62,7 @@
           <div class="col-lg-3">
             <label>Precio</label>
             <select class="selectpicker search-fields form-control" name="precio">
-        
+
               <option value="1"> Entre 5000 a 15000</option>
               <option value="2"> Entre 15000 a 30000 </option>
               <option value="3"> Mayor a 30000 </option>
@@ -71,7 +71,7 @@
           <div class="col-lg-3">
             <label>Lugar</label>
             <select class="selectpicker search-fields form-control" name="lugar">
-        
+
               <option value="1"> San José</option>
               <option value="2"> Alajuela </option>
               <option value="3"> Cartago </option>
@@ -90,11 +90,11 @@
 
     <?PhP
 
-    $datos=array_rand($arrayDatos,6);
+    $datos = array_rand($arrayDatos, 6);
     $phpVariable = "Dog";
-    
+
     ?>
-    
+
 
   </section>
   <!-- Start-Package-Section -->
@@ -114,27 +114,20 @@
                   
                     height: 367px;
                     margin-top: 1%;
-                "alt="">
+                " alt="">
             <div class="package-list-content">
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[0]][1] ?></a>
               </h3>
               <br>
-              <?php
-
-                $id= $arrayDatos[$datos[0]][0];
-               echo $id;
-              ?>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[0]][0];?>"></a>
-              <button type="button" name="mod" class="btn btn-primary" <?php $id= $arrayDatos[$datos[0]][0];  ?>data-toggle="modal" data-target="#dialogo1">
-             
-             
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[0]][0]; ?>">Conocer más</a>
+              <button type="button" name="mod" class="btn btn-primary" <?php $id = $arrayDatos[$datos[0]][0];  ?>data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
         <!-- item -->
         <div class="col-lg-4 col-md-6 col-sm-12 masonry" style="position: absolute; left: 33.3333%; top: 0px;">
-          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[1]][3] ?>  style="
+          <div class="package-list-wrap "><img src=<?= $arrayDatos[$datos[1]][3] ?> style="
                   
                   height: 367px;
                   margin-top: 1%;
@@ -143,9 +136,9 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[1]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[1]][0];?>"></a>
-              <button type="button" class="btn btn-primary" <?php $id= $arrayDatos[$datos[1]][0];  ?> data-toggle="modal" data-target="#dialogo1">
-              
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[1]][0]; ?>">Conocer más</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[1]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
+
             </div>
           </div>
         </div>
@@ -160,7 +153,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[2]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[2]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[2]][0]; ?>">Conocer mas</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[2]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -175,7 +169,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[3]][1] ?></a>
               </h3>
-              <a class="package-list-button"  href="atractivo.php?saludo=<?=$arrayDatos[$datos[3]][0];?>">conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[3]][0]; ?>">conocer mas</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[3]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -190,7 +185,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[4]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[4]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[4]][0]; ?>">Conocer mas</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[4]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -205,7 +201,8 @@
               <h3 class="package-list-title">
                 <a href="atractivo.php"><?= $arrayDatos[$datos[5]][1] ?></a>
               </h3>
-              <a class="package-list-button" href="atractivo.php?saludo=<?=$arrayDatos[$datos[5]][0];?>">Conocer mas</a>
+              <a class="package-list-button" href="atractivo.php?saludo=<?= $arrayDatos[$datos[5]][0]; ?>">Conocer mas</a>
+              <button type="button" class="btn btn-primary" <?php $id = $arrayDatos[$datos[5]][0];  ?> data-toggle="modal" data-target="#dialogo1">Vistazo rápido</button>
             </div>
           </div>
         </div>
@@ -217,64 +214,69 @@
 
 
   <?php
-require_once("conexion.php");
+  require_once("conexion.php");
 
-$conexion = base::conexionn();
-$consulta = mysqli_query($conexion, "SELECT * FROM atractivo_Turistico WHERE id = '$id'");
-      while($row = mysqli_fetch_array($consulta)){
-       
-        $imagen = $row['imagen'];
-        $descripcion=$row['descripcion'];
-        $nombre =$row['nombre'];
-        $lugarDescripcion=$row['descripcion_lugar'];
-        $horario=$row['horario'];
-        $tarifa=$row['tarifa'];
-        $contacto=$row['contacto'];
-        $urlYoutube=$row['url_youtube'];
+  $conexion = base::conexionn();
+  $consulta = mysqli_query($conexion, "SELECT * FROM atractivo_Turistico WHERE id = '$id'");
+  while ($row = mysqli_fetch_array($consulta)) {
 
-      }
-    
-      ?>
+    $imagen = $row['imagen'];
+    $descripcion = $row['descripcion'];
+    $nombre = $row['nombre'];
+    $lugarDescripcion = $row['descripcion_lugar'];
+    $horario = $row['horario'];
+    $tarifa = $row['tarifa'];
+    $contacto = $row['contacto'];
+    $urlYoutube = $row['url_youtube'];
+  }
+
+  ?>
   <!-- Modal -->
   <div class="modal fade" id="dialogo1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-    
-          <!-- cabecera del diálogo -->
-          <div class="modal-header">
-            <h4 class="modal-title">Título del diálogo</h4>
-            <button type="button" class="close" data-dismiss="modal">X</button>
-             
-            <a href="atractivo.php?saludo=<?=$id?>" class="btn btn-info" role="button">Link Button</a>
-          </div>
-    
-          <!-- cuerpo del diálogo -->
-          <div class="modal-body">
+    <div class="modal-dialog">
+      <div class="modal-content">
 
-<div class="row">
-  <div class="col-5">
-    <img src=<?= $imagen?>
-      class="img-fluid" alt="">
-  </div>
-
-  <div class="col-7">
-    <p><strong>My travel to paradise</strong></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit [...]</p>
-    <button type="button" class="btn btn-info btn-md">Read more</button>
-
-  </div>
-</div>
-</div>
-    
-          <!-- pie del diálogo -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          </div>
-    
+        <!-- cabecera del diálogo -->
+        <div class="modal-header">
+          <h4 class="modal-title">Vistazo rápido</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;background-color:white;">
+          <span aria-hidden="true">&times;</span>
+        </button>
         </div>
+
+        <!-- cuerpo del diálogo -->
+        <div class="modal-body">
+
+          <div class="row">
+            <div class="col-5">
+              <img src=<?= $imagen ?> class="img-fluid" alt="">
+            </div>
+
+            
+            <div class="col-7">
+              <p style="color:black;"><strong><?=$nombre?></strong></p>
+              <p style="color:#57595D;"><?=$descripcion?></p>
+            </div>
+
+            <br>
+
+            <div class="col-7">
+              <p style="color:black"><strong>Tarifa</strong></p>
+              <p style="color:#57595D;"><?=$tarifa?></p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- pie del diálogo -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+
       </div>
-    </div> 
-  
+    </div>
+  </div>
+
 
   <!-- End-Package-Section -->
 
@@ -302,13 +304,14 @@ $consulta = mysqli_query($conexion, "SELECT * FROM atractivo_Turistico WHERE id 
 
 
   <script>
-  $('.openBtn').on('click',function(){
-    $('.modal-body').load('CargarContenido.php?saludo<?=$arrayDatos[$datos[0]][0];?>',function(){
-        $('#myModal').modal({show:true});
+    $('.openBtn').on('click', function() {
+      $('.modal-body').load('CargarContenido.php?saludo<?= $arrayDatos[$datos[0]][0]; ?>', function() {
+        $('#myModal').modal({
+          show: true
+        });
+      });
     });
-});
-
-</script>
+  </script>
   <style type="text/css">
     .typewrite>.wrap {
       border-right: 0.08em solid #fff

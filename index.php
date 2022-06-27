@@ -214,7 +214,7 @@
                 <div class="col-lg-6  d-flex align-items-center">
                     <div class="center-title">
                         <h1 class="title">Esta es Costa Rica</h1>
-                        <p class="sub-title" style="margin-bottom: 5%;">Aquí podrás encontrar las mejores recomendaciones de sitios turísticos</p>
+                        <p class="sub-title" style="margin-bottom: 5%;color:grey;">Aquí podrás encontrar las mejores recomendaciones de sitios turísticos</p>
                         <a href="filtroTipoBusqueda.php" class="btn btn-info">Empecemos</a>
                     </div>
                 </div>

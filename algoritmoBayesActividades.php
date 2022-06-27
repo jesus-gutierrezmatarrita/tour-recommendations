@@ -187,4 +187,3 @@ require_once("conexion.php");
         $arrayDatos[] = $row;
       }
     }
-?>

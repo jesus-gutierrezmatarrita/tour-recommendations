@@ -1,4 +1,26 @@
-<?php include("template/cabecera.php");?>
+<?php include("template/cabecera.php"); ?>
+<?php include("conexion.php"); ?>
+<?php
+
+$id= $_GET["direccion"];
+//echo $id;
+?>
+<?php
+require_once("conexion.php");
+
+$conexion = base::conexionn();
+$consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
+      while($row = mysqli_fetch_array($consulta)){
+       
+        $imagen = $row['imagen'];
+        $descripcion=$row['descripcion'];
+        $nombre =$row['nombre'];
+        $precio=$row['precio'];
+
+
+      }
+    
+      ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +44,8 @@
 <body>
     <header class="header" id="inicio">
         <div class="contenedor head">
-            <h1 class="titulo">Las mejores actividades a su alcance</h1>
-            <p class="copy">Diviertase con nuestra actividad de...</p>
+            <h1 class="titulo"><?= $nombre?></h1>
+            <p class="copy">Have fun with our activities!!</p>
         </div>
     </header>
     <main>
@@ -39,64 +61,50 @@
                 <div class="checklist-servicio">
                     <div class="service ">
                         <h3 class="n-service ">
-                            <spam class="number">1</spam>Descripción
+                            <spam class="number">1</spam>Description
                         </h3>
-                        <p>Nuestro tour a Tortuguero en Costa Rica, te llevará a conocer realmente este bosque tropical
-                            lluvioso. Actualmente destino 100% ecológico, repleto de naturaleza.
-
-                            Afortunadamente para tu conveniencia, te llevamos al verdadero Tortuguero. También navegará
-                            por los ríos y canales de agua dulce dentro del Parque Nacional. Tendrás la oportunidad de
-                            experimentar verdaderamente una sección de este inmenso y espectacular parque nacional.
+                        <p><?= $descripcion?>
                         </p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
-                            <spam class="number">1</spam>Incluye
-                        </h3>
-                        <p>Se incluye transporte ida y vuelta
-                            Merienda y almuerzo en el lugar
-                            El equipo para realizar snorkeling
-                        </p>
-                    </div>
-                    <div class="service">
-                        <h3 class="n-service">
-                            <spam class="number">2</spam>Horario
+                            <spam class="number">2</spam>Schedule
                         </h3>
                         <p>Lunes-Juves: 11:00am 4pm</p>
                         <p>Viernes-Domingo: 11:00am 4pm</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
-                            <spam class="number">3</spam>Precio
+                            <spam class="number">3</spam>Price
                         </h3>
-                        <p>$50 por persona</p>
+                        <p><?= $precio?></p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="gallery" id="portafolio">
             <div class="contenedor">
-                <h2 class="subtitulo">Galeria</h2>
+                <h2 class="subtitulo">Gallery</h2>
                 <div class="contenedor-galeria wow animated bounceInLeft box1" data-wow-delay="0.2s">
-                    <img src="images/im1.jpg" alt="" class="img-galeria">
-                    <img src="images/im2.jpg" alt="" class="img-galeria">
-                    <img src="images/im3.jpg" alt="" class="img-galeria">
-                    <img src="images/img7.jpg" alt="" class="img-galeria">
-                    <img src="images/img8.jpg" alt="" class="img-galeria">
-                    <img src="images/img9.jpg" alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
+                    <img src=<?= $imagen?> alt="" class="img-galeria">
                 </div>
             </div>
         </section>
         <section class="imagen-ligth">
             <img src="images/close.svg" alt="" class="close">
-            <img src="images/im1.jpg" alt="" class="agregar-imagen">
+            <img src=<?= $imagen?> alt="" class="agregar-imagen">
         </section>
         <section class="contenedor" id="expertos">
-            <h2 class="subtitulo">Nuestro Transporte incluye:</h2>
+            <h2 class="subtitulo">Our transport includes:</h2>
             <section class="class experts">
                 <div class="cont-expert">
                     <img src="images/aircon.jpg" alt="">
-                    <h3 class="n-expert">Aire Acondicionado</h3>
+                    <h3 class="n-expert">Air-conditioning</h3>
                 </div>
                 <div class="cont-expert">
                 <img src="images/wifi.jpg" title="Wifi" alt="Wifi">
@@ -108,7 +116,7 @@
                     <h1></h1>
                     <br>
                     <br>
-                    <h3 class="n-expert">Servicio privado</h3>
+                    <h3 class="n-expert">Private service</h3>
                 </div>
             </section>
         </section>

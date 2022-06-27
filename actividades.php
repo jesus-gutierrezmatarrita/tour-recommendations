@@ -15,7 +15,8 @@ $consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
         $imagen = $row['imagen'];
         $descripcion=$row['descripcion'];
         $nombre =$row['nombre'];
-        $precio=$row['precio'];
+        $tarifa=$row['tarifa'];
+        $urlYoutube=$row['url_youtube'];
 
 
       }
@@ -53,7 +54,7 @@ $consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
             <h2 class="subtitulo">...</h2>
             <div class="contenedor-servicio">
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OtECxqXOhn0?autoplay=1"
+                    <iframe width="560" height="315" src=<?= $urlYoutube?>
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -68,16 +69,16 @@ $consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
                     </div>
                     <div class="service">
                         <h3 class="n-service">
-                            <spam class="number">2</spam>Schedule
+                            <spam class="number">2</spam>Time
                         </h3>
-                        <p>Lunes-Juves: 11:00am 4pm</p>
-                        <p>Viernes-Domingo: 11:00am 4pm</p>
+                        <p>Monday-Thursday: 11:00am 4:00pm</p>
+                        <p>Friday-Sunday: 11:00am 4:00pm</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
                             <spam class="number">3</spam>Price
                         </h3>
-                        <p><?= $precio?></p>
+                        <p> ₡<?= $tarifa?></p>
                     </div>
                 </div>
             </div>

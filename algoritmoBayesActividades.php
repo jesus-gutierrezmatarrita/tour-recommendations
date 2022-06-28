@@ -11,7 +11,6 @@ require_once("conexion.php");
       $tipoClima = $_POST["tipoClima"];
       $señalInternet = $_POST["señalInternet"];
       $lugar = $_POST["lugar"];
-      echo $tipoTurista;;
       //Cantidad de clases-montaña,playa,ciudad
       $M = 5;
       //valores turista
@@ -19,7 +18,7 @@ require_once("conexion.php");
       //valores precio
       $P_precio = 1 / 3;
       //valores clima
-      $P_clima = 1 / 3;
+      $P_clima = 1 / 2;
       //valores internet
       $P_internet = 1 / 2;
       //valores internet

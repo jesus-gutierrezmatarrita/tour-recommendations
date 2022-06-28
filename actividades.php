@@ -66,21 +66,21 @@ while ($row = mysqli_fetch_array($consulta)) {
                         <h3 class="n-service ">
                             <spam class="number">1</spam>Description
                         </h3>
-                        <p><?= $descripcion ?>
+                        <p style="color:black"><?= $descripcion ?>
                         </p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
                             <spam class="number">2</spam>Time
                         </h3>
-                        <p>Monday-Thursday: 9:00am 2:00pm</p>
-                        <p>Friday-Sunday: 8:00am 4:00pm</p>
+                        <ps tyle="color:black">Monday-Thursday: 9:00am 2:00pm</p>
+                        <p style="color:black">Friday-Sunday: 8:00am 4:00pm</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">
                             <spam class="number">3</spam>Price
                         </h3>
-                        <p> ₡<?= $tarifa ?></p>
+                        <p style="color:black"> ₡<?= $tarifa ?></p>
                     </div>
                 </div>
             </div>

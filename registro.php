@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour Recomendation</title>
     <link rel="stylesheet" href="css/estilosregistro.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
+
+<div class="col-12" style="display: flex;padding: 0px 33rem;margin-top: 40px;">
     <form action="" method="POST" id="form">
         <div class="form">
             <h1>Registro</h1>
@@ -30,5 +33,6 @@
         </div>
     </form>
 
+    </div>
 </body>
 </html>

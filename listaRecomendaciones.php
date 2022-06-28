@@ -209,24 +209,49 @@
   </section>
 
 <!-- Modal -->
-<div class="modal fade" id="dialogo1">
-    <div class="modal-dialog">
+<?php
+  require_once("conexion.php");
+
+  $conexion = base::conexionn();
+  $consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
+  while ($row = mysqli_fetch_array($consulta)) {
+
+    $imagen = $row['imagen'];
+    $descripcion = $row['descripcion'];
+    $nombre = $row['nombre'];
+    $tarifa = $row['tarifa'];
+
+  }
+
+  ?>
+  <!-- Modal -->
+  <div class="modal fade" id="dialogo1">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
         <!-- cabecera del diálogo -->
         <div class="modal-header">
           <h4 class="modal-title">Vistazo rápido</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;background-color:white;">
-          <span aria-hidden="true">&times;</span>
-        </button>
         </div>
 
         <!-- cuerpo del diálogo -->
         <div class="modal-body">
 
           <div class="row">
-            <div class="col-5">
-              <!--<img src=<?= $imagen ?> class="img-fluid" alt="">-->
+            <div class="align-items-center" style="margin-bottom: 20px;">
+              <img src=<?= $imagen ?> style="border-radius: 8px;" alt="">
+            </div>
+
+            <div class="col-12">
+              <p style="color:black;"><strong><?=$nombre?></strong></p>
+              <p style="color:#57595D;"><?=$descripcion?></p>
+            </div>
+
+            <br>
+
+            <div class="col-12">
+              <p style="color:black"><strong>Tarifa</strong></p>
+              <p style="color:#57595D;"><?=$tarifa?></p>
             </div>
 
           </div>
@@ -264,9 +289,11 @@
   <script src="js/imagesloaded.js"></script>
   <!-- main.js -->
   <script src="js/main.js"></script>
+
+
   <script>
     $('.openBtn').on('click', function() {
-      $('.modal-body').load('CargarContenido.php?saludo<?= $arrayDatos[$datos[0]][0]; ?>', function() {
+      $('.modal-body').load('CargarContenido.php?direccion<?= $arrayDatos[$datos[0]][0]; ?>', function() {
         $('#myModal').modal({
           show: true
         });

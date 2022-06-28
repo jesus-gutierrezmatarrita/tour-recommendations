@@ -71,8 +71,8 @@ $consulta = mysqli_query($conexion, "SELECT * FROM Actividad WHERE id = '$id'");
                         <h3 class="n-service">
                             <spam class="number">2</spam>Time
                         </h3>
-                        <p>Monday-Thursday: 11:00am 4:00pm</p>
-                        <p>Friday-Sunday: 11:00am 4:00pm</p>
+                        <p>Monday-Thursday: 9:00am 2:00pm</p>
+                        <p>Friday-Sunday: 8:00am 4:00pm</p>
                     </div>
                     <div class="service">
                         <h3 class="n-service">

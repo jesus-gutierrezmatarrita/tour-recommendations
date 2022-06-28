@@ -31,11 +31,11 @@
                 <a class="nav-link" href="index.php">Inicio </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="listaAtractivos.php">Lista atractivos </a>
+                <a class="nav-link" href="listaAtractivos.php">Atractivos </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="listaRecomendaciones.php">Lista de recomendaciones </a>
+                <a class="nav-link" href="listaRecomendaciones.php">Actividades</a>
             </li>
 
             <li class="nav-item">
